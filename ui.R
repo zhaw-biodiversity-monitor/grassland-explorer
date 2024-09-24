@@ -8,7 +8,7 @@ layers <- read_sf(gpkg_path, "layers_overview")
 aggregation1 <- unique(layers$aggregation1)
 aggregation1 <- aggregation1[aggregation1 != "layers"]
 
-aggregation1 <- c("hex10","hex20","BGR","kantone")
+aggregation1 <- c("Hexagone (10x10km)" = "hex10","Hexagone (20x20km)" = "hex20","Biogeografische Regionen" = "BGR","Kantone"="kantone")
 datasets <- c("Biodiversitätsmonitoring Schweiz" = "normallandschaft") # ,"tww","moore"
 
 
