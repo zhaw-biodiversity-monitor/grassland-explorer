@@ -21,15 +21,15 @@ add_unit <- function(input, add_break = TRUE, add_brackets = TRUE) {
   
   unit <- case_when(
     str_detect(input, "artenreichtum") ~ "Anzahl Arten",
-    str_detect(input, "anteil") ~ "Anteil zwischen 0 - 1",
-    str_detect(input, "temperaturzahl") ~ "Landolt-Zeigerwert von 1–5",
-    str_detect(input, "kontinentalitatszahl") ~ "K-Zahl zwischen 1 - 9",
-    str_detect(input, "freuchtezahl") ~ "F-Zahl zwischen 1 - 12",
-    str_detect(input, "reaktionszahl") ~ "R-Zahl zwischen 1 - 9",
-    str_detect(input, "nahrstoffzahl") ~ "N-Zahl zwischen 1 - 9",
-    str_detect(input, "strategie_c") ~ "competitor",
-    str_detect(input, "strategie_s") ~ "stress tolerator",
-    str_detect(input, "strategie_r") ~ "ruderal",
+    str_detect(input, "anteil") ~ "Anteil Neophyten zwischen 0-1",
+    str_detect(input, "temperaturzahl") ~ "Temperaturzahl",
+    str_detect(input, "kontinentalitatszahl") ~ "Kontinentalitätszahl",
+    str_detect(input, "freuchtezahl") ~ "Feuchtezahl",
+    str_detect(input, "reaktionszahl") ~ "Reaktionszahl",
+    str_detect(input, "nahrstoffzahl") ~ "Nährstoffzahl",
+    str_detect(input, "strategie_c") ~ "Konkurrenzzahl",
+    str_detect(input, "strategie_s") ~ "Stresszahl",
+    str_detect(input, "strategie_r") ~ "Ruderalzahl",
     .default = ""
   )
 
