@@ -9,7 +9,7 @@ aggregation1 <- unique(layers$aggregation1)
 aggregation1 <- aggregation1[aggregation1 != "layers"]
 
 aggregation1 <- c("hex10","hex20","BGR","kantone")
-datasets <- c("normallandschaft") # ,"tww","moore"
+datasets <- c("Biodiversitätsmonitoring Schweiz" = "normallandschaft") # ,"tww","moore"
 
 
 
