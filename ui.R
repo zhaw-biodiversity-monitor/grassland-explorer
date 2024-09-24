@@ -62,7 +62,7 @@ shinyUI(fluidPage(
       ),
       selectInput(
         "column_y",
-        "Unabhängige Variabel",
+        "Variable",
         col_y_options
       ),
 
