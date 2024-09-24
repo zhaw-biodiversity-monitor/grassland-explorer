@@ -238,7 +238,7 @@ shinyServer(function(input, output) {
         hovermode = FALSE,
         clickmode = "none",
         yaxis = list(title = paste0(clean_names(input$column_y), add_unit(input$column_y))),
-        xaxis = list(title = "Meereshöhe (m.ü.M.)"),
+        xaxis = list(title = "Meereshöhe (m ü.M.)"),
         modebar = list(
           remove = c(
             "autoScale2d",
