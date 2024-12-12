@@ -207,7 +207,7 @@ shinyServer(function(input, output) {
         type = "scatter",
         mode = "markers",
         marker = list(color = "rgba(255, 182, 193, 1)"),
-        name = "all"
+        name = "alle"
       ) |>
       add_trace(
         data = grassland_inbounds_renamed(),
@@ -216,7 +216,7 @@ shinyServer(function(input, output) {
           color = "rgba(255,255,255,0)",
           line = list(color = mycols$drawing$rgba_string, width = 2)
         ),
-        name = "in bounds"
+        name = "in der Auswahl"
       )
     if (selected_object() != "") {
       grassland_inpolygon <- grassland_renamed()[grassland_renamed()$agg == selected_object(), ]
