@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.config/
+.local/
+.bash_history
+observable_files
+rsconnect
+.vscode
+appdata
