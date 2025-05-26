@@ -45,7 +45,12 @@ initialize_map <- function() {
 #' @param palette Vector of colors
 #' @param n_classes Number of classes
 #' @param alpha_range Range of alpha values
+#' @param var_name Name of the variable to check for reversed palette
 #' @return Color matrix
-create_bivariate_matrix <- function(palette, n_classes, alpha_range = c(.20, 0.95)) {
+create_bivariate_matrix <- function(palette, n_classes, alpha_range = c(.20, 0.95), var_name = NULL) {
+  # Check if we need to reverse the palette
+  if (!is.null(var_name) && var_name %in% reversed_palette_vars) {
+    palette <- rev(palette)
+  }
   bivariate_matrix_alpha(palette, n_classes, alpha_range)
 } 

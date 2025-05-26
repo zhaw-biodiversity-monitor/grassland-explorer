@@ -49,7 +49,7 @@ shinyServer(function(input, output) {
 
     geodata_i$grp <- factor(paste(n_obs_grp, ycol_grp, sep = "-"), levels = fac_levels)
 
-    bivariate_matrix <- create_bivariate_matrix(bivariate_palette, n_classes)
+    bivariate_matrix <- create_bivariate_matrix(bivariate_palette, n_classes, var_name = input$column_y)
     legend_html <- create_legend(bivariate_matrix, clean_names(input$column_y))
 
     pal_col <- as.vector(bivariate_matrix)

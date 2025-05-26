@@ -13,6 +13,9 @@ mycols <- list(
 # Bivariate color palette
 bivariate_palette <- c("#91BFDB", "#FFFFBF", "#FC8D59")
 
+# Variables that need reversed color palette
+reversed_palette_vars <- c("feuchtezahl", "reaktionszahl")
+
 # Map configuration
 map_config <- list(
   bounds = list(
